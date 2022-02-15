@@ -1,0 +1,27 @@
+/*   */
+  p{
+      text-align: left;
+  }
+ 
+  h1 {
+    color: #fff;
+    padding-left:0;
+  }
+ 
+  .nav-link{
+      font-family: 'Courier New', Courier, monospace;
+  }
+form{
+  margin-left: 5px;
+
+}
+.footer {
+    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  .navbar-brand{
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
