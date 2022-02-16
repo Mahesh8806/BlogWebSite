@@ -7,6 +7,7 @@ const _ = require("lodash");
 
 // *****************************************************************
 const app = express();
+const port = process.env.PORT || 3000;
 
 const homeStartContent = "Arrays are Objects Arrays are a special type of objects. The typeof operator in JavaScript returns 'object' for arrays.But, JavaScript arrays are best described as arrays.Arrays use numbers to access its 'elements'. In this example, person[0] returns John:";
 const aboutContent = "Name : Bunage Mahesh Prabhakar. MobileNo: 8806322064";
@@ -71,6 +72,6 @@ app.get('/posts/:postName',function(req, res){
 })
 
 
-app.listen('3000',function(){
+app.listen(port,function(){
     console.log("Server runs on port : 3000");
 });
