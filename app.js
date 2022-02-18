@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const homeStartContent = "Arrays are Objects Arrays are a special type of objects. The typeof operator in JavaScript returns 'object' for arrays.But, JavaScript arrays are best described as arrays.Arrays use numbers to access its 'elements'. In this example, person[0] returns John:";
-const aboutContent = "Name : Bunage Mahesh Prabhakar. MobileNo: 8806322064";
+const aboutContent = "Name : Bunage Mahesh Prabhakar.\n MobileNo: 8806322064";
 const contactContent = "ContactDetails : Arrays are Objects Arrays are a special type of objects. The typeof operator in JavaScript returns 'object' for arrays.But, JavaScript arrays are best described as arrays.Arrays use numbers to access its 'elements'. In this example, person[0] returns John:";
 const posts = [];
 
@@ -45,12 +45,11 @@ app.post('/compose',function(req,res){
         title: req.body.postTitle,
         content: req.body.postData
     };
-    console.log(data)
+    console.log(data);
 
     posts.push(data);
-    res.redirect('/')
-})
-
+    res.redirect('/');
+});
 
 
 app.get('/posts/:postName',function(req, res){
