@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 const homeStartContent = "What is Node.js? \r Node.js is an open source server environment. Node.js is free. Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)Node.js uses JavaScript on the server...";
-const aboutContent = "Name : Bunage Mahesh Prabhakar.\n MobileNo: 8806322064";
+const aboutContent = "Name: Bunage Mahesh Prabhakar.\n MobileNo: 8806322064 MailId- maheshbunage2000@gmail.com";
 const contactContent = "ContactDetails : Arrays are Objects Arrays are a special type of objects. The typeof operator in JavaScript returns 'object' for arrays.But, JavaScript arrays are best described as arrays.Arrays use numbers to access its 'elements'. In this example, person[0] returns John:";
 const posts = [];
 
