@@ -54,14 +54,15 @@ app.post('/compose',function(req,res){
 });
 app.get('/delete/:deletePost',function(req,res){
     // const arr;
-    const requestDelete =(req.params.deletePost);
-    // console.log(requestDelete);
+    const requestDelete =_.lowerCase(req.params.deletePost);
+    console.log(requestDelete);
 
     for(var i = 0 ; i<posts.length ; i++)
     {
-        if(requestDelete == posts[i].title)
+        if(requestDelete == _.lowerCase(posts[i].title))
         {
             console.log("Post Found...")
+            console.log(posts[i].title)
             posts.splice(i , 1);
             res.redirect('/');
         }
