@@ -4,18 +4,17 @@
 <h1>Home</h1>
 <p><%= homeDetails %></p>
 
+<hr style="border: 1px solid black;">
+
 <% posts.forEach(function(post) { %>
   
     <h1><%= post.title %></h1>
 
     <p><%= post.content.substring(0,100)+"..."%>
-    <a href="/posts/<%=post.title%> ">Read More</a></p>
-
+    <a href="/posts/<%=post.title %> ">Read More</a></p>
+    <a href="/delete/<%=post.title%>"><Button class="btn btn-danger"> DeletePost</Button></a>
+    <hr style="border: 1px solid black;">
 
 <% }) %>
-
-
-
-
 
 <%- include('partials/footer'); -%>
