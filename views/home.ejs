@@ -8,12 +8,15 @@
 
 <% posts.forEach(function(post) { %>
   
+  <div style="padding-bottom: 40px;">
+
     <h1><%= post.title %></h1>
 
     <p><%= post.content.substring(0,100)+"..."%>
     <a href="/posts/<%=post.title %> ">Read More</a></p>
     <a href="/delete/<%=post.title%>"><Button class="btn btn-danger"> DeletePost</Button></a>
     <hr style="border: 1px solid black;">
+</div>
 
 <% }) %>
 
