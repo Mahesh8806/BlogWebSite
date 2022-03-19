@@ -16,9 +16,10 @@ form{
 
 }
 .footer {
-    color: white;
-    color: rgba(0, 0, 0, 0.5);
+    
+    color: rgba(255, 251, 251, 0.5);
     text-align: center;
+    padding: 10px;
   }
   .navbar-brand{
     padding-left: 10px;
